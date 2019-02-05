@@ -25,7 +25,7 @@ NOT even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PUR
 Please understand that there may still be bugs and errors. Use it at your own risk. 
 We take no responsibility for any errors or omissions in this package or for any misfortune 
 that may befall you or others as a result of its use. Please send comments and report 
-bugs to Krzysztof Bartoszek at bartoszekkj@gmail.com .
+bugs to Krzysztof Bartoszek at krzbar@protonmail.ch .
 }
 \details{
 \tabular{ll}{
@@ -57,9 +57,13 @@ The trajectory of the trait(s) can be visualized using \code{draw_phylproc()}.
 }
 \author{
 Krzysztof Bartoszek, Pietro Lio'
-Maintainer: <bartoszekkj@gmail.com>
+Maintainer: <krzbar@protonmail.ch>
 }
 \references{
+Bartoszek, K. and Lio', P (2018). 
+Modelling trait dependent speciation with Approximate Bayesian Computation.
+arXiv:1812.03715
+
 Kutsukake N., Innan H. (2014) Detecting Phenotypic Selection by Approximate Bayesian 
 Computation in Phylogenetic Comparative Methods. In: Garamszegi L. (eds) 
 Modern Phylogenetic Comparative Methods and Their Application in Evolutionary Biology. 

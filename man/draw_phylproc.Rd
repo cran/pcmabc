@@ -26,9 +26,13 @@ It transforms the \code{simulobj} into a matrix understandable by
 \value{Returns a meaningless NA value.}
 
 \references{
+Bartoszek, K. and Lio', P (2018). 
+Modelling trait dependent speciation with Approximate Bayesian Computation.
+arXiv:1812.03715
+
 Bartoszek, K. and Pienaar, J. and Mostad. P. and Andersson, S. and Hansen, T. F. (2012)
-  A phylogenetic comparative method for studying  multivariate adaptation.
-  Journal of Theoretical Biology 314:204-215.
+A phylogenetic comparative method for studying  multivariate adaptation.
+Journal of Theoretical Biology 314:204-215.
 }
 \author{Krzysztof Bartoszek}
 

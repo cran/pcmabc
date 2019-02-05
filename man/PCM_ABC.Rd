@@ -264,6 +264,10 @@ between the observed data and the simulated data under the accepted parameter
 sets in the ABC search procedure.}
 }
 \references{
+Bartoszek, K. and Lio', P (2018). 
+Modelling trait dependent speciation with Approximate Bayesian Computation.
+arXiv:1812.03715
+
 Sheldon R. M. (2006). Simulation. Elsevier Academic Press.
 }
 \author{Krzysztof Bartoszek}

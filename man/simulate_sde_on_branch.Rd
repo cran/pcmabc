@@ -36,6 +36,10 @@ branch and the remaining rows the values of the trait(s).
 }
 
 \references{
+Bartoszek, K. and Lio', P (2018). 
+Modelling trait dependent speciation with Approximate Bayesian Computation.
+arXiv:1812.03715
+
 Brouste A., Fukasawa M., Hino H., Iacus S. M., Kamatani K., Koike Y., 
 Masuda H., Nomura R., Ogihara T., Shimuzu Y., Uchida M., Yoshida N. (2014). 
 The YUIMA Project: A Computational Framework for Simulation and Inference of 

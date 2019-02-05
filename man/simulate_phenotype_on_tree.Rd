@@ -68,6 +68,12 @@ rows correspond to the trait value(s).}
 A matrix with first row being time and next rows the simulated trait(s).}
 }
 
+\references{
+Bartoszek, K. and Lio', P (2018). 
+Modelling trait dependent speciation with Approximate Bayesian Computation.
+arXiv:1812.03715
+}
+
 \author{Krzysztof Bartoszek}
 
 \seealso{\code{\link{simulate_phylproc}}}

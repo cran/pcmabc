@@ -37,6 +37,12 @@ the rows of the output matrix will not correspond to the
 indices of the tree's tips.
 }
 
+\references{
+Bartoszek, K. and Lio', P (2018). 
+Modelling trait dependent speciation with Approximate Bayesian Computation.
+arXiv:1812.03715
+}
+
 \author{Krzysztof Bartoszek}
 
 

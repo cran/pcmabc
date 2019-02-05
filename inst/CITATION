@@ -1,0 +1,23 @@
+citHeader("To cite the pcmabc package in publications use:")
+
+citEntry(
+         entry="Article",
+         author=personList(
+           as.person("Krzysztof Bartoszek"),
+           as.person("Pietro Lio'")
+           ),
+         title="Modelling trait dependent speciation with Approximate Bayesian Computation",
+	 journal = "arXiv e-prints",
+	 archivePrefix = "arXiv",
+	 eprint = "1812.03715",
+	 year = 2018,
+         textVersion=paste(
+         "Bartoszek, K. and Lio', P (2018)",
+	 "Modelling trait dependent speciation with Approximate Bayesian Computation",
+	 "arXiv:1812.03715"
+           )
+         )
+
+citFooter("As pcmabc is continually evolving, you may want to cite its version number. Find it with 'help(package=pcmabc)'.")
+
+
