@@ -203,7 +203,7 @@ simulate_phylproc<-function(tree.height,simul.params,X0,fbirth,fdeath=NULL,fbirt
 		next.speciation.branch<- 0
 		start.times<-sapply(lspeciations,function(x){res<-NA;if(length(x)>0){res<-x[1]};res})
 		if(length(which(is.na(start.times)))<length(start.times)){
-		    next.speciation.branch<-which(start.times==min(start.times,na.rm=TRUE))
+		    next.speciation.branch<-which(start.times==min(start.times,na.rm=TRUE))[1] ## we take only one branch at a time
 		}
 	    }	
 	    
