@@ -60,9 +60,9 @@ Krzysztof Bartoszek, Pietro Lio'
 Maintainer: <krzbar@protonmail.ch>
 }
 \references{
-Bartoszek, K. and Lio', P (2018). 
+Bartoszek, K. and Lio', P (2019). 
 Modelling trait dependent speciation with Approximate Bayesian Computation.
-arXiv:1812.03715
+Acta Physica Polonica B Proceedings Supplement 12(1):25-47.
 
 Kutsukake N., Innan H. (2014) Detecting Phenotypic Selection by Approximate Bayesian 
 Computation in Phylogenetic Comparative Methods. In: Garamszegi L. (eds) 

@@ -7,17 +7,16 @@ citEntry(
            as.person("Pietro Lio'")
            ),
          title="Modelling trait dependent speciation with Approximate Bayesian Computation",
-	 journal = "arXiv e-prints",
-	 archivePrefix = "arXiv",
-	 eprint = "1812.03715",
-	 year = 2018,
+	 journal = "Acta Physica Polonica B Proceedings Supplement",
+	 year = 2019,
+	 volume=12,
+	 number=1,
+         pages="25--47",
          textVersion=paste(
-         "Bartoszek, K. and Lio', P (2018)",
+         "Bartoszek, K. and Lio', P (2019)",
 	 "Modelling trait dependent speciation with Approximate Bayesian Computation",
-	 "arXiv:1812.03715"
-           )
+	 "Acta Phys. Pol. B Proc. Supp. 12(1):25--47")
          )
 
 citFooter("As pcmabc is continually evolving, you may want to cite its version number. Find it with 'help(package=pcmabc)'.")
-
 
