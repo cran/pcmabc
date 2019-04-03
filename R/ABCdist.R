@@ -78,9 +78,6 @@
 	if (method=="dist.topo.KF1994"){
 	    tree_dist<-ape::dist.topo(tree1,tree2,method="score")
 	}
-	if (method=="treeDist"){
-	    tree_dist<-treespace::treeDist(tree1,tree2,lambda=0) ## lambda in is between 0 and 1 0:emphasize toplogy, 1 branch lenghts
-	}
 	if (method=="BHV"){
 	    ltre<-list(tree1,tree2)
 	    class(ltre)<-"multiPhylo"

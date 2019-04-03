@@ -232,7 +232,6 @@ the highest is 1) statistic, to reduce the role of smaller heights. }
 \item{\code{"path.dist"}}{calls \code{phangorn::path.dist()} with \code{use.weight=FALSE}}
 \item{\code{"path.dist.weights"}}{calls \code{phangorn::path.dist()} with \code{use.weight=TRUE}}
 \item{\code{"dist.topo.KF1994"}}{calls \code{ape::dist.topo()} with \code{method="score"}}
-\item{\code{"treeDist"}}{calls \code{treespace::treeDist()} with \code{lambda=0}}
 \item{\code{"BHV"}}{calls \code{distory::dist.multiPhylo()} with \code{method="geodesic"}}
 \item{\code{"BHVedge"}}{calls \code{distory::dist.multiPhylo()} with \code{method="edgeset"}}
 }
