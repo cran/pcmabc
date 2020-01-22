@@ -33,6 +33,22 @@
     	    if (!is.null(tree1) && !is.null(tree2)) {tree1$tip.label<-tree2$tip.label}
     	}
 	if (is.null(tree1) || is.null(tree2)) {return(NA)}
+	
+	if (method=="BHV"){
+	    if (requireNamespace("distory",quietly=TRUE)){ 
+		ltre<-list(tree1,tree2)
+		class(ltre)<-"multiPhylo"
+		tree_dist<-distory::dist.multiPhylo(ltre,method="geodesic")[[1]] 
+	    }else{method<-"wRFnorm.dist"}
+	}
+	if (method=="BHVedge"){
+	    if (requireNamespace("distory",quietly=TRUE)){ 
+		ltre<-list(tree1,tree2)
+		class(ltre)<-"multiPhylo"
+		tree_dist<-distory::dist.multiPhylo(ltre,method="edgeset")[[1]] 
+	    }else{method<-"RF.dist"}
+	}    
+
 	if ((method=="node_heights")||(method=="logweighted_node_heights")){
 	    s1<-sort(ape::node.depth.edgelength(tree1),decreasing = TRUE)
 	    s2<-sort(ape::node.depth.edgelength(tree2),decreasing = TRUE)
@@ -48,8 +64,14 @@
 	    tree_dist<-sqrt(mean(vdiff2))
 	}
 	if (method=="bdcoeffs"){
-    	    tree2_avg_rate<-geiger::bd.km(tree2)
-	    tree1_avg_rate<-geiger::bd.km(tree1)
+	    if (requireNamespace("geiger",quietly=TRUE)){ 
+    		tree2_avg_rate<-geiger::bd.km(tree2)
+		tree1_avg_rate<-geiger::bd.km(tree1)
+	    }else{
+	    ## geiger is currently orphaned on CRAN so the geiger::bd.km() function was copied into pcmabc
+    		tree2_avg_rate<-.geiger_bd.km(tree2)
+		tree1_avg_rate<-.geiger_bd.km(tree1)	    
+	    }
 	## total variation distance between two exponentials -> average rate
 	    L1<-max(c(tree1_avg_rate,tree2_avg_rate))
 	    L2<-min(c(tree1_avg_rate,tree2_avg_rate))
@@ -78,16 +100,6 @@
 	if (method=="dist.topo.KF1994"){
 	    tree_dist<-ape::dist.topo(tree1,tree2,method="score")
 	}
-	if (method=="BHV"){
-	    ltre<-list(tree1,tree2)
-	    class(ltre)<-"multiPhylo"
-	    tree_dist<-distory::dist.multiPhylo(ltre,method="geodesic")[[1]] 
-	}
-	if (method=="BHVedge"){
-	    ltre<-list(tree1,tree2)
-	    class(ltre)<-"multiPhylo"
-	    tree_dist<-distory::dist.multiPhylo(ltre,method="edgeset")[[1]] 
-	}    
     }
     tree_dist
 }

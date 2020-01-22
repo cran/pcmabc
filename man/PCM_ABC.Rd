@@ -179,6 +179,10 @@ and for the distance between phylogenies are
 \code{"RF.dist"}, \code{"wRF.dist"}, \code{"wRFnorm.dist"}, \code{"KF.dist"},
 \code{"path.dist"}, \code{"path.dist.weights"}, \code{"dist.topo.KF1994"},
 \cr \code{"treeDist"}, \code{"BHV"} and \code{"BHVedge"}.
+The \code{"BHV"} and \code{"BHVedge"} methods will only work if 
+the \code{distory} package is installed. If it is not, then
+they will be replaced by \code{"wRFnorm.dist"} and \code{"RF.dist"}
+respectively. The \code{distory} package is orphaned at the moment on CRAN.
 See Details for description of the methods. The choice of which distance
 calculation method is better seems to depend on the model of evolution,
 number of \code{abcsteps} and value of \code{eps}. Some experimentation

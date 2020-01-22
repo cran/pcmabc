@@ -1,12 +1,10 @@
 exportPattern("^[[:alpha:]]+")
 
 # Import all packages listed as Imports or Depends
-importFrom(geiger, bd.km)
 importFrom(ape, node.depth.edgelength, drop.fossil, dist.topo, drop.tip)
 importFrom(yuima, setModel, setSampling, setYuima, simulate)
 importFrom(mvSLOUCH, drawPhylProcess)
 importFrom(phangorn, RF.dist, KF.dist, wRF.dist, path.dist)
-importFrom(distory, dist.multiPhylo)
 importFrom(graphics, hist)
 importFrom(stats, cov, rexp, rnorm, runif, var)
 importFrom(utils, capture.output)
