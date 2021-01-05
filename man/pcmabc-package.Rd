@@ -31,8 +31,8 @@ bugs to Krzysztof Bartoszek at krzbar@protonmail.ch .
 \tabular{ll}{
 Package: \tab pcmabc\cr
 Type: \tab Package\cr
-Version: \tab 1.1\cr
-Date: \tab 2020-01-21\cr
+Version: \tab 1.1.1\cr
+Date: \tab 2021-01-05\cr
 License: \tab GPL (>= 2)\cr
 LazyLoad: \tab yes\cr
 }
