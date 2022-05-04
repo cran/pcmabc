@@ -80,11 +80,11 @@ Acta Physica Polonica B Proceedings Supplement 12(1):25-47.
 
 \examples{
 ## simulate 3d OUBM model
-## This example requires the R package TreeSim 
+## This example requires the R package ape
 ## (to generate the tree in phylo format).
 set.seed(12345)
 
-phyltree<-TreeSim::sim.bd.taxa(numbsim=1,n=5,lambda=1,mu=0)[[1]]
+phyltree<-ape::rphylo(n=5,birth=1,death=0)
 simulate_mvsl_sde<-function(time,params,X0,step){
     A <- c(paste("(-",params$a11,")*(x1-(",params$psi1,"))
     -(",params$a12,")*(x2-(",params$psi2,"))-(",params$b11,")*x3",sep=""),

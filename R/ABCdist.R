@@ -64,14 +64,14 @@
 	    tree_dist<-sqrt(mean(vdiff2))
 	}
 	if (method=="bdcoeffs"){
-#	    if (requireNamespace("geiger",quietly=TRUE)){ 
+	    if (requireNamespace("geiger",quietly=TRUE)){ 
     		tree2_avg_rate<-geiger::bd.km(tree2)
 		tree1_avg_rate<-geiger::bd.km(tree1)
-#	    }else{
-	    ## geiger was oprhaned on CRAN so the geiger::bd.km() function was copied into pcmabc
-#    		tree2_avg_rate<-.geiger_bd.km(tree2)
-#		tree1_avg_rate<-.geiger_bd.km(tree1)	    
-#	    }
+	    }else{
+	    ## geiger is currently orphaned on CRAN so the geiger::bd.km() function was copied into pcmabc
+    		tree2_avg_rate<-.geiger_bd.km(tree2)
+		tree1_avg_rate<-.geiger_bd.km(tree1)	    
+	    }
 	## total variation distance between two exponentials -> average rate
 	    L1<-max(c(tree1_avg_rate,tree2_avg_rate))
 	    L2<-min(c(tree1_avg_rate,tree2_avg_rate))
