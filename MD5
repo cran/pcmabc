@@ -1,4 +1,4 @@
-9fa62757fa898321c20453d7efbd5256 *DESCRIPTION
+6238175560bc1e6047badcbccfc8575b *DESCRIPTION
 0632cc7589c46bbf4981f0a778f1ef2a *LICENCE
 f5defcd2ed67ff7fb3c2369be4b26245 *NAMESPACE
 e1f29568f8c03b838f7fe61c1a440435 *R/ABC.R
@@ -6,7 +6,7 @@ ad52c226fe96ae9142fdf099c9f6d6e6 *R/ABCdist.R
 6366fa1519f1c51a5674ec8daa855efc *R/ABCmessage.R
 51f5cee5bfc41662c8fc81b2bed7590f *R/ABCupdate.R
 e592d1dc40c93894280139db8857fb18 *R/draw.R
-169ef70cbc1e7f1dd82b8bba86045cb0 *R/from_geiger_2_0_6_2_diversification.R
+2fb1cf7cbac50c1bdc6279fefe453e39 *R/from_geiger_2_0_6_2_diversification.R
 20a7b9051f569a06889ea1aeb72710df *R/getTipSample.R
 55ec7e8759506861fbfc94426cfb6e76 *R/rates.R
 67407b1606f2838e50f53d9ddd90fc94 *R/simsde.R
@@ -17,7 +17,7 @@ d32239bcb673463ab874e80d47fae504 *inst/GPL-3
 3449a00615542013d3fe73fb56aad88c *man/PCM_ABC.Rd
 c7c13604cdb4230e26ed834d59ce6afd *man/draw_phylproc.Rd
 45845a18af59e79244ab10561628420c *man/get_phylogenetic_sample.Rd
-2237f9e192e8d79387ccde2677c7f2da *man/pcmabc-package.Rd
+ca263f108a6ed725148705e9eb5bd9ca *man/pcmabc-package.Rd
 d53a5c39eff454f00047a70bccd520f2 *man/simulate_phenotype_on_tree.Rd
 9ce6bad5156ce9fc6d47aa14d60ae74b *man/simulate_phylproc.Rd
 707f732cc629051a95d2cce9eca8d050 *man/simulate_sde_on_branch.Rd

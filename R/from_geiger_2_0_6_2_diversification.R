@@ -33,7 +33,8 @@ function(phy=NULL, time, n, epsilon = 0, missing = 0, crown=TRUE, type=c("magall
 	type=match.arg(type, c("magallon-sanderson", "kendall-moran"))
 	
 	if(!is.null(phy)) {
-		if (class(phy) != "phylo") 
+		##if (class(phy) != "phylo") 
+		if (inherits(phy,"phylo")) ## KB change due to CRAN's requirements
 		stop("'phy' must be a 'phylo' object")
        	
 		if(is.null(phy$root.edge)) phy$root.edge=0
